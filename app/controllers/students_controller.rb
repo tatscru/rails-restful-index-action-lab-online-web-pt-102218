@@ -1,10 +1,8 @@
 class StudentsController < ApplicationController 
-  get '/students' do 
-    erb :index
+ 
+  def index 
+    @students = Student.all 
+    #pulling in a list of all students 
   end 
-  # def index 
-  #   @students = Student.all 
-  #   #pulling in a list of all students 
-  # end 
-  # controller action for handling index action
+  controller action for handling index action
 end 
